@@ -1,0 +1,166 @@
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+&::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border: 1px solid #1C1C1C;
+  background-color: #7c7c7c;
+  padding: 10px 30px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #4c4c4c;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }  
+}
+
+/* dropdown classes */
+
+.dropdown {
+  width: 320px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.dropdown-button {
+  display: flex;
+  gap: 16px;
+}
+
+.dropdown-arrow-container {
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-button .dropdown-arrow-container svg {
+  height: 16px;
+  width: 16px;
+}
+
+.dropdown-box {
+  position: absolute;
+  gap: 8px;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  border: 1px solid #1C1C1C;
+  padding: 10px 30px;
+  background-color: #7c7c7c;
+  left: 0;
+  top: 50px;
+  box-sizing: border-box;
+}
+
+.dropdown-box.active {
+  display: flex;
+}
+
+.link {
+  display: block;
+  color: #1C1C1C;
+}
+
+.dropdown-item {
+  
+}
