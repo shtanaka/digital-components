@@ -188,7 +188,7 @@ button:hover {
   padding: 0;
 }
 
-.burger-menu .menu-base-js {
+.burger-menu .menu-container {
   position: absolute;
   top: 0;
   left: -300px;
