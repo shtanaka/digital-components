@@ -92,6 +92,8 @@ h1 {
   color: #888;
 }
 
+/* component styles */
+
 button {
   border: 1px solid #1C1C1C;
   background-color: #7c7c7c;
@@ -114,8 +116,7 @@ button:hover {
   }  
 }
 
-/* dropdown classes */
-
+/* dropdown component */
 .dropdown {
   width: 320px;
   position: relative;
@@ -161,6 +162,38 @@ button:hover {
   color: #1C1C1C;
 }
 
-.dropdown-item {
-  
+/* burger component */
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 100;
 }
+
+.burger-menu .burger-icon-container-js { 
+  width: 32px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.burger-menu .burger-icon-container-js button {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+}
+
+.burger-menu .menu-base-js {
+  position: absolute;
+  top: 0;
+  left: -300px;
+  height: 100vh;
+  background-color: gray;
+  width: 300px;
+}
+
