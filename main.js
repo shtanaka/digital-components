@@ -1,4 +1,5 @@
-import { addBurgerMenuEvents } from "./src/components/icons/burger";
+
+import { addBurgerMenuEvents } from "./src/components/burger";
 import { addDropdownArrow, addDropdownHideShowEvent, getPageDropdowns } from "./src/components/dropdown";
 
 import "./style.css";
