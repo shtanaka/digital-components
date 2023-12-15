@@ -8,9 +8,10 @@
   </head>
   <body>
     <div id="app">
-      <div class="burger-menu">
+      <div id="burgerMenu" class="burger-menu">
+        <div class="overlay" id="menuOverlay"></div>
         <div class="burger-icon-container-js">
-          <button>
+          <button id="menuOpenButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="menu-icon"
@@ -32,15 +33,15 @@
           </button>
         </div>
 
-        <div class="menu-container" id="menu-base-js">
+        <div class="menu-container" id="menuBase">
           <div><button>opcao 1</button></div>
-          <div class="menu-container" id="menu-child-1-js">
+          <div class="menu-container" id="menuChild1">
             <div><button>opcao child 1</button></div>
             <div><button>opcao child 2</button></div>
             <div><button>opcao child 3</button></div>
           </div>
           <div><button>opcao 2</button></div>
-          <div class="menu-container" id="menu-child-2-js">
+          <div class="menu-container" id="menuChild1">
             <div><button>opcao child 1</button></div>
             <div><button>opcao child 2</button></div>
           </div>

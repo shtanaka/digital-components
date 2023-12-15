@@ -1,3 +1,4 @@
+import { addBurgerMenuEvents } from "./src/components/icons/burger";
 import { addDropdownArrow, addDropdownHideShowEvent, getPageDropdowns } from "./src/components/dropdown";
 
 import "./style.css";
@@ -12,6 +13,7 @@ function renderDropdowns() {
 }
 
 function main() {
+  addBurgerMenuEvents();
   renderDropdowns();
 }
 
